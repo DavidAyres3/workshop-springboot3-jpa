@@ -14,10 +14,7 @@ import com.ayres.course.repositories.ProductRepository;
 public class ProductService {
 	
 	@Autowired
-	//injeção de dependência automática
-	
 	private ProductRepository repository;
-	//variável usada para acessar os métodos do ProductRepository
 	
 	public List<Product> findAll(){
 		return repository.findAll();

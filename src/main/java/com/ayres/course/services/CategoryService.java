@@ -14,10 +14,8 @@ import com.ayres.course.repositories.CategoryRepository;
 public class CategoryService {
 	
 	@Autowired
-	//injeção de dependência automática
-	
+
 	private CategoryRepository repository;
-	//variável usada para acessar os métodos do UserRepository
 	
 	public List<Category> findAll(){
 		return repository.findAll();
